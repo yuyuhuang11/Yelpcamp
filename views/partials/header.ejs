@@ -6,7 +6,29 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="/stylesheets/main.css">
     <link rel="icon" href="/images/favicon.ico" />
-    <script src="logic.js"></script>
+    <script>
+      var map;
+      var myLatLng = {lat: 44.9727, lng: -93.23540000000003};
+
+      map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 14,
+        center: myLatLng
+      });
+
+      var marker = new google.maps.Marker({
+        position: myLatLng,
+        map: map,
+        title: 'Hello World!'
+      });
+      var contentString = 'The campground is here!';
+      var infowindow = new google.maps.InfoWindow;
+      infowindow = new google.maps.InfoWindow({
+        content: contentString
+      });
+      marker.addListener('click', function() {
+        infowindow.open(map, marker);
+      });
+    </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDUYnombGRvOkOL56PN3ab_WwldiOszll4&callback=initMap&libraries=places" async defer></script>
   </head>
   <body>

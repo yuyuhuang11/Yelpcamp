@@ -17,6 +17,6 @@ function initMap() {
           content: contentString
         });
         marker.addListener('click', function() {
-          infowindow.open(resultsMap, marker);
+          infowindow.open(map, marker);
         });
 }
