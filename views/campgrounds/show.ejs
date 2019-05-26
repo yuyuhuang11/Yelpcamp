@@ -4,35 +4,11 @@
   <div class="row">
     <div class="col-md-3">
       <a href="/campgrounds" class="btn btn-light lead">Go Back</a>
-      <!-- <button type="button" class="btn btn-light">Light</button> -->
       <div class="list-group">
         <li class="list-group-item active">Contact Person: Charlie Camp</li>
         <li class="list-group-item ">Contact Number: 123-456-7890</li>
         <li class="list-group-item ">Address: 11th Ave, Minneapolis, MN12345, USA</li>
       </div>
-<%      function initMap() {
-        var myLatLng = {lat: 44.9727, lng: -93.23540000000003};
-
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 14,
-          center: myLatLng
-        });
-
-        var marker = new google.maps.Marker({
-          position: myLatLng,
-          map: map,
-          title: 'Hello World!'
-        });
-        var contentString = 'The campground is here!';
-        var infowindow = new google.maps.InfoWindow;
-        infowindow = new google.maps.InfoWindow({
-          content: contentString
-        });
-        marker.addListener('click', function() {
-          infowindow.open(resultsMap, marker);
-        });
-      }
-%>
     <div class="" id="map"></div>
 
     </div>
