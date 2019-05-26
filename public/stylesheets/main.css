@@ -1,8 +1,6 @@
 .thumbnail img{
-  /* width: 100%; */
   width: 100%;
-  opacity: 1;
-  transition: opacity 0.3s;
+
 }
 
 .thumbnail {
@@ -15,17 +13,4 @@
 
 .delete-form {
   display: inline;
-}
-.campground__image {
-  height: 150px;
-}
-.card {
-  border: none;
-  border-radius: 2px;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
-  transition: box-shadow 200ms cubic-bezier(0.4,0.0,0.2,1);
-}
-
-.card:hover {
-  box-shadow: 0 3px 8px 0 rgba(0,0,0,0.2), 0 0 0 1px rgba(0,0,0,0.08);
 }
