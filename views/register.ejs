@@ -2,11 +2,11 @@
 
 <h1>Sign Up!</h1>
 
-<form action="/register" method="post">
+<!-- <form action="/register" method="post">
   <input type="text" name="username" placeholder="username">
   <input type="password" name="password" placeholder="password">
   <button>Sign Up</button>
-</form>
+</form> -->
 
 <div class="container">
 <div class="row">
@@ -15,18 +15,18 @@
    <form action="/register" method="post">
      <div class="form-group">
        <label for="username">User Name</label>
-       <input class="form-control" type="text" name="username" autocomplete="off" required />
+       <input class="form-control" type="text" name="username" placeholder="username" autocomplete="off" required />
      </div>
      <div class="form-group">
        <label for="password">Password</label>
-       <input class="form-control" type="password" name="password" autocomplete="off" required />
+       <input class="form-control" type="password" name="password" placeholder="password" autocomplete="off" required />
      </div>
      <div class="form-group">
-       <button class="btn btn-md btn-primary btn-block">Login</button>
+       <button class="btn btn-md btn-primary btn-block">Sign Up</button>
      </div>
      <!-- <span>Forgot your password? <a href="/password_reset">Reset password</a></span> -->
      <hr>
-     <span>Already have an account? <a href="/register">Log back in!</a></span>
+     <span>Already have an account? <a href="/login">Log back in!</a></span>
    </form>
    <hr>
    <a href="/campgrounds">Back</a>
