@@ -9,7 +9,9 @@
         <li class="list-group-item ">Contact Number: 123-456-7890</li>
         <li class="list-group-item ">Address: 11th Ave, Minneapolis, MN12345, USA</li>
       </div>
-    <divid="map"></div></div>
+    <div class="" id="map"></div>
+      Map Here!
+    </div>
     <div class="col-md-9">
       <div class="thumbnail">
         <img class="img=responsive" src="<%= campground.image %>">
@@ -62,8 +64,7 @@ function initMap() {
   var myLatLng = {lat: 44.9727, lng: -93.23540000000003};
   var map = new google.maps.Map(document.getElementById('map'), {
     zoom: 14,
-    center: myLatLng,
-    scrollwheel: true
+    center: myLatLng
   });
 
   var marker = new google.maps.Marker({
