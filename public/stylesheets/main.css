@@ -1,6 +1,17 @@
 .thumbnail img{
   width: 100%;
+  height: auto;
+}
 
+.gallery:hover {
+  border: 1px solid #777;
+}
+
+.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
 }
 
 .thumbnail {
