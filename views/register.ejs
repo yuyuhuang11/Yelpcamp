@@ -1,0 +1,30 @@
+<% include ./partials/header %>
+
+<div class="container">
+<div class="row">
+ <h1 style="text-align: center">Sign Up</h1>
+ <div class="rwd-form">
+   <form action="/register" method="post">
+     <div class="form-group">
+       <label for="username">User Name</label>
+       <input class="form-control" type="text" name="username" placeholder="username" autocomplete="off" required />
+     </div>
+     <div class="form-group">
+       <label for="password">Password</label>
+       <input class="form-control" type="password" name="password" placeholder="password" autocomplete="off" required />
+     </div>
+     <div class="form-group">
+       <button class="btn btn-md btn-primary btn-block">Sign Up</button>
+     </div>
+     <!-- <span>Forgot your password? <a href="/password_reset">Reset password</a></span> -->
+     <hr>
+     <span>Already have an account? <a href="/login">Log back in!</a></span>
+   </form>
+   <hr>
+   <a href="/campgrounds">Back</a>
+ </div>
+</div>
+
+</div><!-- /.container -->
+
+<% include ./partials/footer %>
